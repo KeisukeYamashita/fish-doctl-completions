@@ -212,12 +212,12 @@ complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool' 
 
 # Completions for the `doctl kubernetes cluster node-pool create` command
 complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l auto-scale -d "Boolean indicating whether to enable auto-scaling on the node pool"
-complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l -r count   -d "Size of (number of nodes in) the node pool"
+complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -rl count     -d "Size of (number of nodes in) the node pool"
 complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l label      -d "Label in key=value notation to apply to the node pool"
 complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l max-nodes  -d "Maximum number of nodes in the node pool when autoscaling is enabled"
 complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l min-nodes  -d "Minimum number of nodes in the node pool when autoscaling is enabled"
-complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l -r name    -d "Name of the node pool"
-complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l -r size    -d "Size of the nodes in the node pool"
+complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l name       -d "Name of the node pool"
+complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -rl size      -d "Size of the nodes in the node pool"
 complete -c doctl -n '__fish_seen_subcommand_from kubernetes cluster node-pool create' -l tag        -d "Tag to apply to the node pool"
 
 # Completions for the `doctl kubernetes cluster node-pool delete` command
@@ -277,9 +277,9 @@ complete -c doctl -n '__fish_seen_subcommand_from projects' -a update    -d "Upd
 complete -c doctl -n '__fish_seen_subcommand_from projects create' -l description -d "Dscription of the project"
 complete -c doctl -n '__fish_seen_subcommand_from projects create' -l environment -d "Environment in which your project resides. Possible values: Development, `Staging`, or `Production`"
 complete -c doctl -n '__fish_seen_subcommand_from projects create' -l format      -d "Columns for output in a comma-separated list. Possible values: ID, `OwnerUUID`, `OwnerID`, `Name`, `Description`, `Purpose`, `Environment`, `IsDefault`, `CreatedAt`, `UpdatedAt`"
-complete -c doctl -n '__fish_seen_subcommand_from projects create' -l -r name     -d "Name for the project"
-complete -c doctl -n '__fish_seen_subcommand_from projects create' -l no-header   -d "Return raw data with no headers"
-complete -c doctl -n '__fish_seen_subcommand_from projects create' -l -r purpose  -d "Project's purpose"
+complete -c doctl -n '__fish_seen_subcommand_from projects create' -rl name       -d "Name for the project"
+complete -c doctl -n '__fish_seen_subcommand_from projects create' -rl no-header  -d "Return raw data with no headers"
+complete -c doctl -n '__fish_seen_subcommand_from projects create' -rl purpose    -d "Project's purpose"
 
 # Completions for the `doctl projects delete` command
 complete -c doctl -n '__fish_seen_subcommand_from doctl projects delete' -l force -d "Delete the project without confirmation"
@@ -312,6 +312,6 @@ complete -c doctl -n '__fish_seen_subcommand_from projects resources list' -l no
 complete -c doctl -n '__fish_seen_subcommand_from projects update' -l description -d "Dscription of the project"
 complete -c doctl -n '__fish_seen_subcommand_from projects update' -l environment -d "Environment in which your project resides. Possible values: Development, `Staging`, or `Production`"
 complete -c doctl -n '__fish_seen_subcommand_from projects update' -l format      -d "Columns for output in a comma-separated list. Possible values: ID, `OwnerUUID`, `OwnerID`, `Name`, `Description`, `Purpose`, `Environment`, `IsDefault`, `CreatedAt`, `UpdatedAt`"
-complete -c doctl -n '__fish_seen_subcommand_from projects update' -l -r name     -d "Name for the project"
+complete -c doctl -n '__fish_seen_subcommand_from projects update' -rl name       -d "Name for the project"
 complete -c doctl -n '__fish_seen_subcommand_from projects update' -l no-header   -d "Return raw data with no headers"
-complete -c doctl -n '__fish_seen_subcommand_from projects update' -l -r purpose  -d "Project's purpose"
+complete -c doctl -n '__fish_seen_subcommand_from projects update' -rl purpose    -d "Project's purpose"
